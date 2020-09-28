@@ -5,7 +5,7 @@ import Header from './components/Header/Header';
 import HomePage from './pages/homePage/HomePage';
 import ShopPage from './pages/shopPage/ShopPage';
 import SignInSignOut from './pages/sign-In-Sign-Out/SignInSignOut';
-import { auth } from '../src/firebase/firebase-utils';
+import { auth, createUserProfileDocument } from '../src/firebase/firebase-utils';
 
 import './App.css';
 
@@ -22,7 +22,7 @@ class App extends React.Component {
 
   componentDidMount() {
     this.unsubscribeFromAuth = auth.onAuthStateChanged(user => {
-      this.setState({ currentUser: user });
+      createUserProfileDocument(user)
 
       console.log(user);
     })
