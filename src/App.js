@@ -3,11 +3,12 @@ import { Switch, Route, Redirect } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
 
-import Header from './components/Header/Header';
-import HomePage from './pages/homePage/HomePage';
+import HomePage from './pages/homepage/HomePage';
 import ShopPage from './pages/shopPage/ShopPage';
 import SignAndInSignUp from './pages/signInSignUp/SignInAndSignUp';
 import CheckoutPage from './pages/cheackout/CheckoutPage';
+
+import Header from './components/Header/Header';
 
 import { auth, createUserProfileDocument } from '../src/firebase/firebase-utils';
 
