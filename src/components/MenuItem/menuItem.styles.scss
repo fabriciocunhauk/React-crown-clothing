@@ -1,5 +1,5 @@
 .menu-item {
-    min-width: 30%;
+    min-width: 250px;
     height: 240px;
     flex: 1 1 auto;
     display: flex;
@@ -8,6 +8,13 @@
     border: 1px solid black;
     margin: 0 7.5px 15px;
     overflow: hidden;
+
+    @media (min-width: 700px) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 30%;
+    }
 
     &:hover {
      cursor: pointer;   
