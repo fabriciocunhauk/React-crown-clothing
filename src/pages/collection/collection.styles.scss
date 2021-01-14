@@ -15,5 +15,12 @@
     & .collection-item {
       margin-bottom: 30px;
     }
+
+    @media (max-width: 500px) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
   }
 }

@@ -40,6 +40,15 @@
       font-size: 24px;
       color: red;
     }
+
+    @media (max-width: 500px) {
+      width: 320px;
+      margin-left: -35px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
   }
 
   

@@ -12,4 +12,8 @@
         display: flex;
         justify-content: space-between;
     }
+
+    @media (max-width: 500px) {
+        margin-bottom: 40px;
+      }
 }
