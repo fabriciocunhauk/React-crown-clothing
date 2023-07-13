@@ -1,4 +1,4 @@
-Check website in: https://react-crown-clothing-ecommerce.herokuapp.com/
+Check website in: https://crown-clothing-woad-omega.vercel.app/
 
 E-commerce platform created using React.js and Redux.
 
